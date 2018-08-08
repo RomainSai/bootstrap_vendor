@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap2Vendor</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="vendor/assets/bootstrap/css/bootstrap.min.css"/>
+    <script src="vendor/assets/bootstrap/js/jquery.js"></script>
+    <script src="vendor/assets/bootstrap/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <%= render 'layouts/header' %>
+    </div>
+    <%= yield %>
+  </body>
+</html>
